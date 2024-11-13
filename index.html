@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Tuition - Physics, Math, Add Math</title>
+    <link rel="stylesheet" href="IGCSE CSS.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>IGCSE Tuition</h1>
+            <p>Excel in Physics, Math, and Additional Math</p>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About the Tutor</h2>
+        <p>Experienced tutor offering customized IGCSE tuition in Physics, Math, and Add Math. Focused on building strong concepts and problem-solving skills to help students succeed.</p>
+    </section>
+
+    <section id="subjects" class="subjects">
+        <h2>Subjects</h2>
+        <div class="subject-card">
+            <h3>Physics</h3>
+            <p>Master the fundamentals of physics and prepare for IGCSE exams with tailored lessons.</p>
+            <button class="subject-button" onclick="subjectClick('Physics')">Start Your Physics Journey!</button>
+        </div>
+        <div class="subject-card">
+            <h3>Math</h3>
+            <p>Develop essential math skills and boost your confidence in tackling IGCSE Math problems.</p>
+            <button class="subject-button" onclick="subjectClick('Math')">Discover the Power of Math!</button>
+        </div>
+        <div class="subject-card">
+            <h3>Add Math</h3>
+            <p>Take on advanced math challenges to excel in Additional Mathematics.</p>
+            <button class="subject-button" onclick="subjectClick('Add Math')">Go Beyond with Add Math!</button>
+        </div>
+    </section>
+
+    <section id="fees" class="fees">
+        <h2>Tuition Fees</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Hourly Rate</th>
+                    <th>Discounted Package (10 sessions)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Physics</td>
+                    <td>RM 40</td>
+                    <td>RM 360 (10% off)</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>RM 40</td>
+                    <td>RM 360 (10% off)</td>
+                </tr>
+                <tr>
+                    <td>Add Math</td>
+                    <td>RM 50</td>
+                    <td>RM 450 (10% off)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h3>What subjects do you offer tutoring for?</h3>
+            <p>We offer tutoring for IGCSE Physics, Mathematics, and Additional Mathematics.</p>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h3>How are lessons conducted?</h3>
+            <p>Lessons are held online through video calls, allowing flexibility and convenience for students.</p>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h3>What is the experience level of the tutor?</h3>
+            <p>The tutor has years of experience teaching IGCSE students and a proven record of helping students excel.</p>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h3>Are there any discounts for multiple sessions?</h3>
+            <p>Yes, we offer discounts for students booking multiple sessions in advance. Contact us for more details.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Reach out to start your learning journey today!</p>
+        <div class="contact-info">
+            <p>Email: <a href="ismeth.shanizul1@gmail.com">ismeth.shanizul1@gmail.com</a></p>
+            <p>Phone: <a href="wa.link/gaekd9">60-139673688</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IGCSE Tuition | Created by Aish</p>
+    </footer>
+
+    <script>
+        function subjectClick(subject) {
+            alert("Interested in " + subject + "? Let’s make it happen!");
+        }
+
+        function toggleAnswer(faqItem) {
+            const answer = faqItem.querySelector('p');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

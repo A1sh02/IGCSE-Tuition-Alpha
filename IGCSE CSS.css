@@ -1,0 +1,212 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background: linear-gradient(to bottom right, #f7d700, #ffffff, #000000);
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f7d700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #000;
+    color: #f7d700;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.about, .subjects, .fees, .faq, .contact {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Subjects Section */
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subject-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.subject-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Animation */
+.subject-button {
+    background-color: #f7d700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    position: relative;
+}
+
+.subject-button:hover {
+    background-color: #333;
+    color: #f7d700;
+    transform: scale(1.05);
+}
+
+.subject-button:hover::after {
+    content: "Limited Spots Available!";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #333;
+    background-color: #f7d700;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* Fees Section Table */
+.fees table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fees th, .fees td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    background-color: #f7d700;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.faq-item h3 {
+    color: #333;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.faq-item:hover h3 {
+    color: #f7d700;
+    transform: translateX(10px);
+}
+
+.faq-item p {
+    margin-top: 5px;
+    display: none;
+    color: #555;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contact Section */
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #f7d700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .subjects {
+        flex-direction: column;
+    }
+
+    .subject-card {
+        width: 100%;
+    }
+
+    .contact-info {
+        font-size: 1.1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
