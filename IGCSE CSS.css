@@ -8,7 +8,7 @@
 
 body {
     color: #333;
-    background: linear-gradient(to bottom right, #f7d700, #ffffff, #000000);
+    background: linear-gradient(to bottom right, #1bd8cf, #ffffff, #000000, silver);
     scroll-behavior: smooth;
 }
 
@@ -111,7 +111,7 @@ section {
 }
 
 .subject-button:hover::after {
-    content: "Limited Spots Available!";
+    content: "Grab Your Spot Now!";
     position: absolute;
     top: -25px;
     left: 50%;
@@ -166,7 +166,7 @@ section {
 /* Contact Section */
 .contact-info a {
     color: #333;
-    text-decoration: none;
+    text-decoration:double;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -213,4 +213,8 @@ section {
 
 img{
     float: left;
+    margin-bottom: 5px;
+}
+footer{
+    color: silver;
 }
